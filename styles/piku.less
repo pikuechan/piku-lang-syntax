@@ -43,42 +43,47 @@
 //   'name': 'entity.email.piku'
 // }
 
+atom-text-editor .syntax--piku, :host{
+  background-color: @piku-background;
+  color: @piku-base-text;
+}
+
 .syntax{
   &--markup{
     &.syntax--heading{
       &.syntax--h2{
         &.syntax--piku{
-          color:@green;
+          color:@piku-yellow;
           font-style: normal;
         }
       }
       &.syntax--h3{
         &.syntax--piku{
-          color:@green;
+          color:@piku-right-blue;
         }
       }
       &.syntax--h4{
         &.syntax--piku{
-          color:@green;
+          color:@piku-right-pink;
         }
       }
       &.syntax--list{
         &.syntax--piku{
-          color:@blue;
+          color:@piku-right-blue;
         }
       }
     }
     &.syntax--list{
       &.syntax--numbered{
         &.syntax--piku{
-          color: @pink;
+          color: @piku-right-pink;
         }
       }
     }
     &.syntax--comment{
       &.syntax--block{
         &.syntax--piku{
-          color: @gray;
+          color: @piku-gray;
         }
       }
     }
@@ -86,24 +91,24 @@
   &--comment{
     &.syntax--note{
       &.syntax--piku{
-        color: @gray;
+        color: @piku-pink;
       }
     }
     &.syntax--line{
       &.syntax--piku{
-        color: @gray;
+        color: @piku-gray;
       }
     }
   }
   &--entity{
     &.syntax--uri{
       &.syntax--piku{
-        color: @pink;
+        color: @piku-bluegreen;
       }
     }
     &.syntax--email{
       &.syntax--piku{
-        color: @pink;
+        color: @piku-purple;
       }
     }
   }
