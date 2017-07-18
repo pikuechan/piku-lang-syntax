@@ -43,6 +43,8 @@
 //   'name': 'entity.email.piku'
 // }
 
+
+// basic style
 atom-text-editor .syntax--piku, :host{
   background-color: @piku-background;
   color: @piku-base-text;
@@ -113,3 +115,58 @@ atom-text-editor .syntax--piku, :host{
     }
   }
 }
+
+
+// assist style
+atom-text-editor .piku, :host{
+  background-color: @piku-background;
+  color: @piku-base-text;
+}
+
+.markup{
+  &.heading.h2.piku{
+    color: @piku-purple;
+  }
+  &.heading.h3.piku{
+    color: @piku-purple;
+  }
+  &.heading.h4.piku{
+    color: @piku-purple;
+  }
+  &.heading.list.piku{
+    color: @piku-purple;
+  }
+  &.list.numbered.piku{
+    color: @piku-purple;
+  }
+  &.comment.block.piku{
+    color: @piku-purple;
+  }
+}
+.comment{
+  &.note.piku{
+    color: @piku-purple;
+  }
+  &.line.piku{
+    color: @piku-purple;
+  }
+}
+.entity{
+  &.uri.piku{
+    color: @piku-purple;
+  }
+  &.email.piku{
+    color: @piku-purple;
+  }
+}
+
+// markup.heading.h2.piku
+// markup.heading.h3.piku
+// markup.heading.h4.piku
+// markup.heading.list.piku
+// markup.list.numbered.piku
+// markup.comment.block.piku
+// comment.note.piku
+// comment.line.piku
+// entity.uri.piku
+// entity.email.piku
