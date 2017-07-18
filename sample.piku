@@ -1,0 +1,31 @@
+▼サブタイトル
+▶サブタイトル
+※note
+*note
+・サブタイトル
+#comment
+
+test:ああああああ
+test：ああああああああああ
+aaa:http://test.test.com/
+
+＜サブタイトル＞sampletext
+[サブタイトル]sampletext
+sampletext(aaa)sampletext
+（あああ）sampletext
+
+1.サンプルタイトル　サンプルテキスト
+2.サンプルタイトル サンプルテキスト
+2000.10.3(水)サンプルタイトル
+2000.10.3(水) サンプルタイトル
+192.111.111.111　ぴぴぴぴ IP
+ぴぴぴ　192.111.111.111 ぴぴぴ
+
+ぴぴぴ https://xxx.com
+ぴぴぴ　ftp://xxx.com aa
+あああ　http://xxx.com　あああ
+
+xxx@yyy.zzz ぴぴぴ
+あ　xxx@yyy.zzz　ぴぴぴ
+xxx@yyy.zzz
+ぴぴぴ

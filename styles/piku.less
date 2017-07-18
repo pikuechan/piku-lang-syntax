@@ -1,0 +1,67 @@
+@import "syntax-variables";
+
+    //
+    //
+    // ▼▶
+    // 'name': 'markup.heading.h2.piku'
+    //
+    // ・
+    // 'name': 'markup.heading.h3.piku'
+    //
+    // <>[]
+    // 'match': '([＜\\[].*?[\\]＞])'
+    // 'name': 'markup.heading.h4.piku'
+    //
+    // 0123456789
+    // 'match': '([０-９0-9]+[\.．][^ 　]*)'
+    // 'name': 'markup.list.numbered.bold.piku'
+    //
+    // ()（）
+    // 'match': '([（\(].*?[\)）])'
+    // 'name': 'comment.block.piku'
+    //
+    // #
+    // 'match': '(^#.*)'
+    // 'name': 'comment.line.piku'
+    //
+    // http://
+    // 'match': '([^\\s:：]*?:\/\/[^\\s]*)'
+    // 'name': 'entity.uri.piku'
+    //
+    // email@
+    // 'match': '([^\\s:：]*?@[^\\s]*)'
+    // 'name': 'entity.email.piku'
+    //
+    // ※\*
+    // 'name': 'entity.name.note.piku'
+    //
+    // :：
+    // 'match': '(^[^\\s]*?[:：])'
+    // 'name': 'storage.type.piku'
+
+.syntax{
+  &--markup{
+    &.syntax--heading{
+      &.syntax--h2{
+        &.syntax--piku{
+          color:@green;
+          font-style: normal;
+        }
+      }
+    }
+  }
+  &--comment{
+
+  }
+  &--entity{
+
+  }
+  &--storage{
+    &.syntax--type{
+      &.syntax--piku{
+        color: @green;
+        font-style: normal;
+      }
+    }
+  }
+}
