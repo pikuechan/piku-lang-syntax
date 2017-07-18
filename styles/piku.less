@@ -1,43 +1,47 @@
 @import "syntax-variables";
 
-    //
-    //
-    // ▼▶
-    // 'name': 'markup.heading.h2.piku'
-    //
-    // ・
-    // 'name': 'markup.heading.h3.piku'
-    //
-    // <>[]
-    // 'match': '([＜\\[].*?[\\]＞])'
-    // 'name': 'markup.heading.h4.piku'
-    //
-    // 0123456789
-    // 'match': '([０-９0-9]+[\.．][^ 　]*)'
-    // 'name': 'markup.list.numbered.bold.piku'
-    //
-    // ()（）
-    // 'match': '([（\(].*?[\)）])'
-    // 'name': 'comment.block.piku'
-    //
-    // #
-    // 'match': '(^#.*)'
-    // 'name': 'comment.line.piku'
-    //
-    // http://
-    // 'match': '([^\\s:：]*?:\/\/[^\\s]*)'
-    // 'name': 'entity.uri.piku'
-    //
-    // email@
-    // 'match': '([^\\s:：]*?@[^\\s]*)'
-    // 'name': 'entity.email.piku'
-    //
-    // ※\*
-    // 'name': 'entity.name.note.piku'
-    //
-    // :：
-    // 'match': '(^[^\\s]*?[:：])'
-    // 'name': 'storage.type.piku'
+
+//
+// {
+//   'match': '(^[▼▶].*)'
+//   'name': 'markup.heading.h2.piku'
+// }
+// {
+//   'match': '([＜\\[].*?[\\]＞])'
+//   'name': 'markup.heading.h3.piku'
+// }
+// {
+//   'match': '(^・.*)'
+//   'name': 'markup.heading.h4.piku'
+// }
+// {
+//   'match': '(^[^\\s]*?[:：])'
+//   'name': 'markup.heading.list.piku'
+// }
+// {
+//   'match': '([０-９0-9]+[\.．][^ 　]*)'
+//   'name': 'markup.list.numbered.piku'
+// }
+// {
+//   'match': '([（\(].*?[\)）])'
+//   'name': 'markup.comment.block.piku'
+// }
+// {
+//   'match': '(^[※\*].*)'
+//   'name': 'comment.note.piku'
+// }
+// {
+//   'match': '(^#.*)'
+//   'name': 'comment.line.piku'
+// }
+// {
+//   'match': '([^\\s:：]*?:\/\/[^\\s]*)'
+//   'name': 'entity.uri.piku'
+// }
+// {
+//   'match': '([^\\s:：]*?@[^\\s]*)'
+//   'name': 'entity.email.piku'
+// }
 
 .syntax{
   &--markup{
@@ -48,19 +52,58 @@
           font-style: normal;
         }
       }
+      &.syntax--h3{
+        &.syntax--piku{
+          color:@green;
+        }
+      }
+      &.syntax--h4{
+        &.syntax--piku{
+          color:@green;
+        }
+      }
+      &.syntax--list{
+        &.syntax--piku{
+          color:@blue;
+        }
+      }
+    }
+    &.syntax--list{
+      &.syntax--numbered{
+        &.syntax--piku{
+          color: @pink;
+        }
+      }
+    }
+    &.syntax--comment{
+      &.syntax--block{
+        &.syntax--piku{
+          color: @gray;
+        }
+      }
     }
   }
   &--comment{
-
+    &.syntax--note{
+      &.syntax--piku{
+        color: @gray;
+      }
+    }
+    &.syntax--line{
+      &.syntax--piku{
+        color: @gray;
+      }
+    }
   }
   &--entity{
-
-  }
-  &--storage{
-    &.syntax--type{
+    &.syntax--uri{
       &.syntax--piku{
-        color: @green;
-        font-style: normal;
+        color: @pink;
+      }
+    }
+    &.syntax--email{
+      &.syntax--piku{
+        color: @pink;
       }
     }
   }
