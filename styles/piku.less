@@ -45,8 +45,7 @@
 
 
 // basic style
-atom-text-editor .syntax--piku, :host{
-  background-color: @piku-background;
+atom-text-editor .syntax--piku{
   color: @piku-base-text;
 }
 
@@ -55,7 +54,7 @@ atom-text-editor .syntax--piku, :host{
     &.syntax--heading{
       &.syntax--h2{
         &.syntax--piku{
-          color:@piku-yellow;
+          color:@piku-pink;
           font-weight: bold;
         }
       }
@@ -67,7 +66,7 @@ atom-text-editor .syntax--piku, :host{
       }
       &.syntax--h4{
         &.syntax--piku{
-          color:@piku-right-pink;
+          color:@piku-blue;
           font-weight: bold;
         }
       }
@@ -80,7 +79,7 @@ atom-text-editor .syntax--piku, :host{
     &.syntax--list{
       &.syntax--numbered{
         &.syntax--piku{
-          color: @piku-right-pink;
+          color: @piku-yellow;
         }
       }
     }
@@ -95,7 +94,7 @@ atom-text-editor .syntax--piku, :host{
   &--comment{
     &.syntax--note{
       &.syntax--piku{
-        color: @pink;
+        color: @piku-red;
       }
     }
     &.syntax--line{
@@ -107,12 +106,12 @@ atom-text-editor .syntax--piku, :host{
   &--entity{
     &.syntax--uri{
       &.syntax--piku{
-        color: @piku-bluegreen;
+        color: @piku-green;
       }
     }
     &.syntax--email{
       &.syntax--piku{
-        color: @piku-purple;
+        color: @piku-orange;
       }
     }
   }
