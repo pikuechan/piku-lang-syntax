@@ -1,49 +1,5 @@
 @import "syntax-variables";
 
-
-//
-// {
-//   'match': '(^[▼▶].*)'
-//   'name': 'markup.heading.h2.piku'
-// }
-// {
-//   'match': '([＜\\[].*?[\\]＞])'
-//   'name': 'markup.heading.h3.piku'
-// }
-// {
-//   'match': '(^・.*)'
-//   'name': 'markup.heading.h4.piku'
-// }
-// {
-//   'match': '(^[^\\s]*?[:：])'
-//   'name': 'markup.heading.list.piku'
-// }
-// {
-//   'match': '([０-９0-9]+[\.．][^ 　]*)'
-//   'name': 'markup.list.numbered.piku'
-// }
-// {
-//   'match': '([（\(].*?[\)）])'
-//   'name': 'markup.comment.block.piku'
-// }
-// {
-//   'match': '(^[※\*].*)'
-//   'name': 'comment.note.piku'
-// }
-// {
-//   'match': '(^#.*)'
-//   'name': 'comment.line.piku'
-// }
-// {
-//   'match': '([^\\s:：]*?:\/\/[^\\s]*)'
-//   'name': 'entity.uri.piku'
-// }
-// {
-//   'match': '([^\\s:：]*?@[^\\s]*)'
-//   'name': 'entity.email.piku'
-// }
-
-
 // basic style
 atom-text-editor .syntax--piku{
   color: @piku-base-text;
@@ -67,7 +23,11 @@ atom-text-editor .syntax--piku{
       &.syntax--h4{
         &.syntax--piku{
           color:@piku-blue;
-          font-weight: bold;
+        }
+      }
+      &.syntax--h5{
+        &.syntax--piku{
+          color:@piku-blue;
         }
       }
       &.syntax--list{
@@ -80,6 +40,7 @@ atom-text-editor .syntax--piku{
       &.syntax--numbered{
         &.syntax--piku{
           color: @piku-yellow;
+          font-weight: bold;
         }
       }
     }
@@ -88,6 +49,11 @@ atom-text-editor .syntax--piku{
         &.syntax--piku{
           color: @piku-gray;
         }
+      }
+    }
+    &.syntax--star{      
+      &.syntax--piku{
+        color: @piku-yellow;
       }
     }
   }
