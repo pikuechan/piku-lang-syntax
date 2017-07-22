@@ -3,31 +3,30 @@
 // basic style
 atom-text-editor .syntax--piku{
   color: @piku-base-text;
+  //font-family:"小塚ゴシック ProL","Helvetica Neue","sans-serif";
 }
 
 .syntax{
   &--markup{
     &.syntax--heading{
-      &.syntax--h2{
+      &.syntax--title1{
         &.syntax--piku{
           color:@piku-pink;
-          font-weight: bold;
         }
       }
-      &.syntax--h3{
+      &.syntax--title2{
         &.syntax--piku{
           color:@piku-right-blue;
-          font-weight: bold;
         }
       }
-      &.syntax--h4{
+      &.syntax--title3{
         &.syntax--piku{
-          color:@piku-blue;
+          color:@piku-right-blue;
         }
       }
-      &.syntax--h5{
+      &.syntax--title4{
         &.syntax--piku{
-          color:@piku-blue;
+          color:@piku-pink;
         }
       }
       &.syntax--list{
@@ -39,8 +38,7 @@ atom-text-editor .syntax--piku{
     &.syntax--list{
       &.syntax--numbered{
         &.syntax--piku{
-          color: @piku-yellow;
-          font-weight: bold;
+          color: @piku-pink;
         }
       }
     }
@@ -51,9 +49,14 @@ atom-text-editor .syntax--piku{
         }
       }
     }
-    &.syntax--star{      
+    &.syntax--star{
       &.syntax--piku{
         color: @piku-yellow;
+      }
+    }
+		&.syntax--arrow{
+      &.syntax--piku{
+        color: @piku-gray;
       }
     }
   }
@@ -72,7 +75,7 @@ atom-text-editor .syntax--piku{
   &--entity{
     &.syntax--uri{
       &.syntax--piku{
-        color: @piku-green;
+        color: @piku-purple;
       }
     }
     &.syntax--email{
@@ -80,62 +83,61 @@ atom-text-editor .syntax--piku{
         color: @piku-purple;
       }
     }
+    &.syntax--time{
+      &.syntax--piku{
+        color: @piku-yellow;
+      }
+    }
+    &.syntax--date{
+      &.syntax--piku{
+        color: @piku-yellow;
+      }
+    }
   }
 }
 
 
 // assist style
-atom-text-editor .piku{
-  color: @piku-base-text;
-}
-
-.markup{
-  &.heading.h2.piku{
-    color: @piku-pink;
-  }
-  &.heading.h3.piku{
-    color: @piku-right-blue;
-  }
-  &.heading.h4.piku{
-    color: @piku-pink;
-  }
-  &.heading.h5.piku{
-    color: @piku-pink;
-  }
-  &.heading.list.piku{
-    color: @piku-right-blue;
-  }
-  &.list.numbered.piku{
-    color: @piku-yellow;
-  }
-  &.comment.block.piku{
-    color: @piku-gray;
-  }
-}
-.comment{
-  &.note.piku{
-    color: @piku-red;
-  }
-  &.line.piku{
-    color: @piku-gray;
-  }
-}
-.entity{
-  &.uri.piku{
-    color: @piku-blue;
-  }
-  &.email.piku{
-    color: @piku-blue;
-  }
-}
-
-// markup.heading.h2.piku
-// markup.heading.h3.piku
-// markup.heading.h4.piku
-// markup.heading.list.piku
-// markup.list.numbered.piku
-// markup.comment.block.piku
-// comment.note.piku
-// comment.line.piku
-// entity.uri.piku
-// entity.email.piku
+// atom-text-editor .piku{
+//   color: @piku-base-text;
+// }
+//
+// .markup{
+//   &.heading.h2.piku{
+//     color: @piku-pink;
+//   }
+//   &.heading.h3.piku{
+//     color: @piku-right-blue;
+//   }
+//   &.heading.h4.piku{
+//     color: @piku-pink;
+//   }
+//   &.heading.h5.piku{
+//     color: @piku-pink;
+//   }
+//   &.heading.list.piku{
+//     color: @piku-right-blue;
+//   }
+//   &.list.numbered.piku{
+//     color: @piku-yellow;
+//   }
+//   &.comment.block.piku{
+//     color: @piku-gray;
+//   }
+// }
+// .comment{
+//   &.note.piku{
+//     color: @piku-red;
+//   }
+//   &.line.piku{
+//     color: @piku-gray;
+//   }
+// }
+// .entity{
+//   &.uri.piku{
+//     color: @piku-blue;
+//   }
+//   &.email.piku{
+//     color: @piku-blue;
+//   }
+// }
