@@ -5,13 +5,13 @@ Piku-lang-syntax　は テキストドキュメント専用のカラーリング
 .txt .piku の拡張子で書かれたテキストドキュメントをテキストハイライトすることができます。
 Piku-lang 以外の文法では Monokai のハイライトカラーが設定されています。
 
-piku-lang: 
-https://github.com/pikuechan/piku-lang
-https://atom.io/packages/piku-lang
-
-
-*Abstruct
-Piku-lang-syntax is document highlighting package for Piku-lang.
+*Piku-lang-syntax is document highlighting package for Piku-lang.
 Piku-lang is document format for Japanese.
 
-![coloring image sample](https://github.com/pikuechan/piku-lang-syntax/blob/master/sampleimage.png)
+****
+
+piku-lang:  
+https://github.com/pikuechan/piku-lang  
+https://atom.io/packages/piku-lang  
+
+![sample image](https://github.com/pikuechan/piku-lang-syntax/blob/master/sampleimage.png)
