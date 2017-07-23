@@ -1,15 +1,15 @@
 {
-    "name": "piku-lang-syntax",
-    "theme": "syntax",
-    "version": "0.0.0",
-    "description": "日本語用テキストファーマットパッケージ piku-lang 専用のカラーリングテーマです",
-    "keywords": [
-        "syntax",
-        "theme"
-    ],
-    "repository": "https://github.com/pikuechan/piku-lang-syntax",
-    "license": "MIT",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    }
+  "name": "piku-lang-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "日本語用テキストファーマットパッケージ piku-lang 専用のカラーリングテーマです",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/pikuechan/piku-lang-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
 }
